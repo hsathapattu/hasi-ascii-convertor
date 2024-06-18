@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII-Word Converter</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>ASCII-Word Converter</h1>
+        <div class="form-group">
+            <label for="inputText">Input</label>
+            <div class="input-group">
+                <textarea class="form-control" id="inputText" rows="3" placeholder="Enter ASCII codes or words here..."></textarea>
+                <div class="input-group-append">
+                    <button id="clearInputBtn" class="btn btn-danger">Clear</button>
+                </div>
+            </div>
+        </div>
+        <button id="asciiToWordBtn" class="btn btn-primary">ASCII to Word</button>
+        <button id="wordToAsciiBtn" class="btn btn-secondary">Word to ASCII</button>
+        <div class="form-group mt-3">
+            <label for="outputText">Output</label>
+            <div class="input-group">
+                <textarea class="form-control" id="outputText" rows="3" readonly></textarea>
+                <div class="input-group-append">
+                    <button id="clearOutputBtn" class="btn btn-danger">Clear</button>
+                </div>
+            </div>
+        </div>
+        <button id="copyOutputBtn" class="btn btn-success">Copy to Clipboard</button>
+    </div>
+    <div class="footer text-center mt-4">
+        <p>Created by Hasi</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
